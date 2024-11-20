@@ -1,0 +1,37 @@
+.wrapper {
+    width: 1200px;
+    margin: 200px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aboutVR {
+    margin-bottom: 20px;
+
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 24px;
+    color: rgba(68, 99, 129, 1);
+}
+
+.title {
+    width: 590px;
+    margin-bottom: 20px;
+
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 75px;
+    color: rgba(235, 131, 130, 1);
+}
+
+.desc {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 29px;
+    color: rgba(130, 111, 140, 1);
+
+    width: 520px;
+    margin-bottom: 40px;
+}
