@@ -1,0 +1,21 @@
+.wrapper {
+    cursor: pointer;
+
+    background-image: linear-gradient(to right, #4499d9, #4499d9, #7367be);
+    border-radius: 25px;
+    color: rgba(255, 255, 255, 1);
+
+    display: inline-block;
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    color: white;
+    transition: box-shadow 0.3s ease-in-out;
+
+}
+
+.wrapper:hover {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5),
+        -2px -2px 15px rgba(0, 0, 0, 0.5);
+}

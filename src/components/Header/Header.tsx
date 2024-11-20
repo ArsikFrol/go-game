@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './styles.module.css'
 
 import logo from '../../image/logo.webp'
+import Button from '../UI/Button'
 
 type Props = {}
 
@@ -9,8 +10,7 @@ const navList = [
     { id: 1, text: 'Home' },
     { id: 2, text: 'About Us' },
     { id: 3, text: 'Prices' },
-    { id: 4, text: 'Rules' },
-    { id: 5, text: 'Get Started Now' }
+    { id: 4, text: 'Rules' }
 ]
 
 interface navListInter {
@@ -30,6 +30,7 @@ const Header = React.memo(function Header(props: Props) {
                         )
                     })
                 }
+                <Button text='Get Started Now' padding='13px 20px' />
             </div>
         </div>
     )

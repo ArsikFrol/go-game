@@ -12,13 +12,6 @@
     align-items: center;
     gap: 40px;
 
-    >div:nth-child(5) {
-        padding: 13px 20px;
-        background-image: linear-gradient(to right, #4499d9, #4499d9, #7367be);
-        border-radius: 25px;
-        color: rgba(255, 255, 255, 1);
-    }
-
     >div:not(:last-child) {
         position: relative;
 
