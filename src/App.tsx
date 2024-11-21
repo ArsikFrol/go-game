@@ -4,6 +4,7 @@ import './App.css';
 import Header from './components/Header/Header';
 import GamingConsole from './components/GamingConsole/GamingConsole';
 import VRGlasses from './components/VRGlasses/VRGlasses';
+import AboutXBOX from './components/AboutXBOX/AboutXBOX';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <GamingConsole />
       <VRGlasses />
+      <AboutXBOX />
     </>
   );
 }

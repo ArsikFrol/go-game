@@ -1,0 +1,36 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 1200px;
+    margin: 0 auto 100px;
+}
+
+.about {
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 24px;
+    color: rgba(68, 99, 129, 1);
+
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 75px;
+    color: rgba(235, 131, 130, 1);
+
+    margin-bottom: 20px;
+}
+
+.desc {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 29px;
+    color: rgba(130, 111, 140, 1);
+
+    width: 520px;
+    margin-bottom: 20px;
+}

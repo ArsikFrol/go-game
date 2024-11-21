@@ -5,3 +5,7 @@
 
   background-image: url('./image/bgHome.webp');
 }
+
+*::-webkit-scrollbar {
+  display: none;
+}
