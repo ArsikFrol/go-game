@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from './styles.module.css'
 
+import { motion } from 'framer-motion'
+
 import piple from '../../image/gamingConsole/piple.webp'
 import sony from '../../image/gamingConsole/sonyDualshock.webp'
 import star from '../../image/gamingConsole/star.webp'
@@ -21,6 +23,18 @@ const listStar = [
     { id: 5 }
 ]
 
+const Amination = {
+    hidden: {
+        y: -100,
+        opacity: 0
+    },
+    visible: (custom: number) => ({
+        y: 0,
+        opacity: 1,
+        transition: { delay: custom * 0.2 }
+    })
+}
+
 const GamingConsole = React.memo(function GamingConsole(props: Props) {
     return (
         <div className={styles.wrapper}>
@@ -33,7 +47,7 @@ const GamingConsole = React.memo(function GamingConsole(props: Props) {
                     more-or-less normal distribution of letters as opposed.</div>
                 <Button text='Get Started Now' padding='13px 20px' />
             </div>
-            <div className={styles.rightContent}>
+            <motion.div initial='hidden' whileInView='visible' variants={Amination} custom={1} className={styles.rightContent}>
                 <img draggable='false' src={piple} className={styles.pipleImage} />
                 <div className={styles.sonyContent}>
                     <div className={styles.leftSony}>
@@ -73,7 +87,7 @@ const GamingConsole = React.memo(function GamingConsole(props: Props) {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
             <img draggable='false' src={cross} className={styles.crossImage} />
             <img draggable='false' src={arrows} className={styles.arrowsImage} />
             <img draggable='false' src={points} className={styles.pointsImage} />

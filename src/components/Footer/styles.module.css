@@ -1,0 +1,29 @@
+.wrapper {
+    padding: 10px 100px 10px;
+    border-top: 1px solid rgba(129, 111, 140, 1);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fee9dc;
+}
+
+img {
+    cursor: pointer;
+}
+
+.rightContent {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    >img:nth-child(1) {
+        padding: 10px 15px;
+    }
+
+    >img {
+        background: rgba(252, 216, 203, 1);
+        padding: 10px;
+        border-radius: 100%;
+    }
+}

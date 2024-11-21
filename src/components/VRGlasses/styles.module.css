@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 .aboutVR {
@@ -34,4 +35,10 @@
 
     width: 520px;
     margin-bottom: 40px;
+}
+
+.ghostImage {
+    position: absolute;
+    right: -100px;
+    bottom: 0;
 }

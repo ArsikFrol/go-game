@@ -1,0 +1,155 @@
+/* OurPricting */
+
+.wrapper {
+    background: #fee9dc;
+    padding-top: 100px;
+}
+
+.ourPricing {
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 24px;
+    color: rgba(68, 99, 129, 1);
+
+    width: 125px;
+    margin: 0 auto 20px;
+}
+
+.title {
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 75px;
+    color: rgba(235, 131, 130, 1);
+
+    width: 572px;
+    margin: 0 auto 50px;
+}
+
+.rowCart {
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+
+    display: grid;
+    align-items: center;
+
+    grid-template-columns: 360px 360px 360px;
+    grid-template-rows: 570px;
+    justify-content: space-between;
+}
+
+
+
+/* CartPricting */
+
+.wrapperStandard {
+    background: linear-gradient(180deg, #446381 0, #826f8c 100%);
+    border-radius: 20px;
+    padding: 60px 0 80px 50px;
+    position: relative;
+
+    .titleCart {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 28px;
+        color: white;
+
+        margin-bottom: 50px;
+    }
+
+    .price {
+        font-size: 18px;
+        font-weight: 700;
+        color: rgba(235, 131, 130, 1);
+
+        margin-bottom: 40px;
+
+        .countPrice {
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 50px;
+        }
+    }
+
+    .columnPluses {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 70px;
+
+        .elem {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 25px;
+            color: rgba(255, 255, 255, 1);
+        }
+    }
+}
+
+.wrapperCart {
+    background: rgba(251, 218, 207, 1);
+    border-radius: 20px;
+    padding: 50px 0 50px 50px;
+
+    .titleCart {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 32px;
+        color: rgba(68, 99, 129, 1);
+
+        margin-bottom: 50px;
+    }
+
+    .price {
+        font-size: 18px;
+        font-weight: 700;
+        color: rgba(235, 131, 130, 1);
+
+        margin-bottom: 40px;
+
+        .countPrice {
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 50px;
+        }
+    }
+
+    .columnPluses {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 70px;
+
+        .elem {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 25px;
+            color: rgba(130, 111, 140, 1);
+        }
+    }
+}
+
+.checkMarkStandard {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.graffitiImage {
+    position: absolute;
+    pointer-events: none;
+    bottom: 0;
+    left: 0;
+}
+
+.none {
+    display: none;
+}
