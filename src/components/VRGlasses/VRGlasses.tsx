@@ -1,13 +1,10 @@
 import React from 'react'
-import styles from './styles.module.css'
 import { motion } from 'framer-motion'
 
+import styles from './styles.module.css'
 import Button from '../UI/Button'
-
 import ghost from '../../image/ghost.webp'
 import pipleVR from '../../image/pipleVR.webp'
-
-type Props = {}
 
 const AminationLeft = {
     hidden: {
@@ -33,7 +30,7 @@ const AnimationRight = {
     })
 }
 
-const VRGlasses = React.memo(function VRGlasses(props: Props) {
+const VRGlasses = React.memo(function VRGlasses() {
     return (
         <div className={styles.wrapper} id='about'>
             <motion.div

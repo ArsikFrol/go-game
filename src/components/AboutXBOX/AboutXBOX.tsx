@@ -1,11 +1,9 @@
 import React from 'react'
-import styles from './styles.module.css'
 import { motion } from 'framer-motion'
 
+import styles from './styles.module.css'
 import XBOX from '../../image/XBOX.webp'
 import Button from '../UI/Button'
-
-type Props = {}
 
 const AminationLeft = {
     hidden: {
@@ -31,7 +29,7 @@ const AnimationRight = {
     })
 }
 
-const AboutXBOX = React.memo(function AboutXBOX(props: Props) {
+const AboutXBOX = React.memo(function AboutXBOX() {
     return (
         <div className={styles.wrapper}>
             <motion.div initial='hidden'

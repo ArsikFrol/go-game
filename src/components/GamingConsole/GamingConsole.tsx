@@ -1,8 +1,7 @@
 import React from 'react'
-import styles from './styles.module.css'
-
 import { motion } from 'framer-motion'
 
+import styles from './styles.module.css'
 import piple from '../../image/gamingConsole/piple.webp'
 import sony from '../../image/gamingConsole/sonyDualshock.webp'
 import star from '../../image/gamingConsole/star.webp'
@@ -12,16 +11,6 @@ import arrows from '../../image/gamingConsole/arrows.webp'
 import points from '../../image/gamingConsole/points.webp'
 
 import Button from '../UI/Button'
-
-type Props = {}
-
-const listStar = [
-    { id: 1 },
-    { id: 2 },
-    { id: 3 },
-    { id: 4 },
-    { id: 5 }
-]
 
 const Amination = {
     hidden: {
@@ -35,7 +24,7 @@ const Amination = {
     })
 }
 
-const GamingConsole = React.memo(function GamingConsole(props: Props) {
+const GamingConsole = React.memo(function GamingConsole() {
     return (
         <div className={styles.wrapper}>
             <div className={styles.leftContent}>
@@ -55,9 +44,9 @@ const GamingConsole = React.memo(function GamingConsole(props: Props) {
                         <div className={styles.price}>$50 Per Hour</div>
                         <div className={styles.rowStar}>
                             {
-                                listStar.map((obj: any) => {
+                                [...Array(4)].map((_, i) => {
                                     return (
-                                        <img draggable='false' src={star} key={obj.id} />
+                                        <img key={i} draggable='false' src={star} />
                                     )
                                 })
                             }
@@ -77,9 +66,9 @@ const GamingConsole = React.memo(function GamingConsole(props: Props) {
                         <div className={styles.price}>$50 Per Hour</div>
                         <div className={styles.rowStar}>
                             {
-                                listStar.map((obj: any) => {
+                                [...Array(4)].map((_, i) => {
                                     return (
-                                        <img draggable='false' src={star} key={obj.id} />
+                                        <img key={i} draggable='false' src={star} />
                                     )
                                 })
                             }

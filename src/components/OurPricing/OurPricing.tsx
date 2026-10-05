@@ -8,16 +8,21 @@ import graffiti from '../../image/graffiti.webp'
 
 import CartPricing from './CartPricing'
 
-type Props = {}
+export type Cart = {
+    id: number,
+    title: string,
+    price: number,
+    pluses: string[]
+}
 
-const listCart = [
+const listCart: Cart[] = [
     { id: 1, title: 'Basic', price: 50, pluses: ['10 users included', '2 GB of storage', 'Email support', 'Help center access', '10 users included'] },
     { id: 2, title: 'Standard', price: 95, pluses: ['10 users included', '2 GB of storage', 'Email support', 'Help center access', '10 users included'] },
     { id: 3, title: 'Premiun', price: 120, pluses: ['10 users included', '2 GB of storage', 'Email support', 'Help center access', '10 users included'] }
 
 ]
 
-const OurPricing = React.memo(function OurPricing(props: Props) {
+const OurPricing = React.memo(function OurPricing() {
 
     return (
         <div className={styles.wrapper}>
@@ -25,11 +30,8 @@ const OurPricing = React.memo(function OurPricing(props: Props) {
             <div className={styles.title}>Choose Your Plan</div>
             <div className={styles.rowCart}>
                 {
-                    listCart.map((obj: any) => {
-                        return (
-                            <CartPricing graffiti={graffiti} key={obj.id} checkMarkWhite={checkMarkWhite} obj={obj} standardCheckMark={standardCheckMark} checkMark={checkMark} />
-                        )
-                    })
+                    listCart.map((obj: Cart, i) => <CartPricing key={i} graffiti={graffiti} 
+                        checkMarkWhite={checkMarkWhite} obj={obj} standardCheckMark={standardCheckMark} checkMark={checkMark} />)
                 }
             </div>
         </div>

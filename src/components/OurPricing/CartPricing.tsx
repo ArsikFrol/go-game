@@ -3,9 +3,10 @@ import { motion } from 'framer-motion'
 
 import styles from './styles.module.css'
 import Button from '../UI/Button';
+import { Cart } from './OurPricing';
 
 type Props = {
-    obj: any
+    obj: Cart
     checkMark: string;
     standardCheckMark: string;
     checkMarkWhite: string;
